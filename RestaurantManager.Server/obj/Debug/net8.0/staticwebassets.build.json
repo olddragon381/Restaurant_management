@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "tAvjY9VzQjEs6zM4Loiwo/6gp4aPN+DxTmYmm1W0s0Q=",
+  "Source": "RestaurantManager.Server",
+  "BasePath": "_content/RestaurantManager.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\dddoan\\dotnet\\RestaurantManager\\restaurantmanager.client\\restaurantmanager.client.esproj",
+      "Version": 2,
+      "Source": "restaurantmanager.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
