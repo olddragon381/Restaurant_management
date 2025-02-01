@@ -14,15 +14,27 @@ namespace RestaurantManager.Server.Models
         [Required]
         public string PasswordHash { get; set; } // Mã hóa mật khẩu
 
-       
+        [Required]
+      
+        public string salt { get; set; } //
 
         [Required]
-        [MaxLength(20)]
-        public string Role { get; set; } // Vai trò (Admin, Staff...)
+        public string Email { get; set; } // Email
+
+
+        [Required]
+      
+        public Role Role { get; set; } = Role.User;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Ngày tạo
 
         public DateTime? UpdatedAt { get; set; } // Ngày cập nhật
 
+    }
+    public enum Role
+    {
+        User = 0,   // Mặc định là khách hàng
+        Staff = 1,  // Nhân viên nhà hàng
+        Admin = 2   // Quản trị viên
     }
 }

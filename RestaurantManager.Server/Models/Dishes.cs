@@ -12,7 +12,7 @@ namespace RestaurantManager.Server.Models
         public string Name { get; set; } // Tên món ăn
 
         [MaxLength(50)]
-        public string Category { get; set; } // Danh mục (khai vị, món chính, tráng miệng...)
+        public Category Category { get; set; } = Category.appetizer; // Danh mục (khai vị, món chính, tráng miệng
 
         [Required]
         [Range(0.01, 10000)]
@@ -27,5 +27,13 @@ namespace RestaurantManager.Server.Models
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Ngày tạo món
 
         public DateTime? UpdatedAt { get; set; }
+    }
+
+    public enum Category
+    {
+        //khai vị, món chính, tráng miệng
+        appetizer =0,
+        main = 1,
+        dessert = 2,
     }
 }
